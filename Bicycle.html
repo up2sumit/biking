@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BiCycle</title>
+    <link rel="stylesheet" type="text/css" href="slide.css">
+<link href="https://fonts.googleapis.com/css?family=Viga|Volkhov&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        body
+        {
+            font-size: 18px;
+            background-color: burlywood;
+            color: white;
+        }
+.scope
+        {
+            margin-top: 30px;
+            height: 550px;
+            width: 80%;
+            margin-left: 10%;
+            position: fixed;
+            background-color: #ce954b;
+            background: linear-gradient(210deg,  #ce954b 50%, #b57317 50%);
+            border-radius: 15px;
+            box-shadow: 25px 25px 5px gray;
+        }
+#fnt
+        {
+          font-family: 'Viga', sans-serif;
+            font-size: 140px;
+            color: white;
+            margin-top: 110px;
+            text-align: center;
+            letter-spacing:8px;
+        }
+.nav
+        {
+            height: 50px;
+            width: 100%;
+            color: white;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        ul {
+  list-style-type: none;
+  margin: 10px 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ text-decoration-line: none;
+}
+        a:hover
+        {
+            text-decoration: none;
+            text-decoration-line: none;
+        }
+#photo
+        {
+            margin-top: -290px;
+            align-content: center;
+            transform: rotate(-5deg);
+            
+        }
+        button
+        {
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+background-color: #cb811a;
+  cursor: pointer;
+border-radius: 5px;
+        }
+        button:hover
+        {
+            background-color:#cba51a;
+        }
+    </style>
+</head>
+    <body>
+    <div class="scope">
+<div class="nav">
+    
+<ul>
+    <li style="float:left; width: 200px;font-size: 35px;"><a href="">Club </a></li>
+  <li style="float: left"><a href="#bike">Bikes</a></li>
+  <li style="float: left"><a href="#wear">Wears</a></li>
+  <li style="float: left"><a href="#equip">Equipments</a></li>
+    
+  <li><a href="#cart" class="fa fa-shopping-cart" style="font-size: 35px;" ></a></li> 
+  <li><a href="#user" class="glyphicon glyphicon-user" style="font-size: 30px;" ></a></li>
+
+<!--  <li><img src="image/cart.png" height="40px" width="60px"></li> 
+  <li><a href="#user" class="glyphicon glyphicon-user" style="font-size: 30px;" ></a></li>
+    -->
+</ul>
+</div>
+        
+        <div id="fnt">
+            <p id="caption">MONTRA ROCK</p>
+        </div>
+        <div id="photo"><center>
+                 <div class="mySlides">
+        <img src="image/MANBIKE.png" width="60%"; height="350px;">
+  </div>       <div class="mySlides">
+        <img src="image/rock.png" width="60%"; height="350px;">
+  </div>    
+                <div class="mySlides">
+        <img src="image/bic.png" width="60%"; height="350px;">
+  </div>        <div class="mySlides">
+        <img src="image/bi.png" width="60%"; height="350px;">
+  </div>
+            
+            </center>
+        </div><center>
+        <button>View Product</button></center>
+           <center> <div class="demo" onclick="currentSlide(1)" style="background-image: url(image/MANBIKE.png)" id="ROCK RIDER"></div>
+            <div class="demo" onclick="currentSlide(2)" style="background-image: url(image/rock.png)" id="B'TWIN A10"></div>
+            
+            <div class="demo" onclick="currentSlide(3)" style="background-image: url(image/bic.png)" id="MONTRA ROCK"></div>
+           
+            <div class="demo" onclick="currentSlide(4)" style="background-image: url(image/bi.png)" id="FOCUS B325"></div></center>
+        </div>
+        <script src="slide.js"></script>
+    </body>
+</html>
